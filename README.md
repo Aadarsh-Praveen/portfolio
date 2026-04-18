@@ -51,23 +51,7 @@ portfolio/
 └── public/
     ├── resume.pdf            # Resume (add your PDF here)
     ├── intersystems-badge.png
-    └── videos/              # Project video backgrounds (optional)
 ```
-
-## 🎬 Higgsfield Video Backgrounds (Optional)
-
-Project cards support looping video backgrounds. Generate videos using:
-- **Kling AI** (free, no watermark)
-- **Runway ML** (125 free credits)
-- **Google Veo** via AI Studio (free)
-
-Place compressed MP4 files (under 3MB each) in `/public/videos/`:
-- `project-vabgenrx.mp4`
-- `project-recommendation.mp4`
-- `project-rag-financial.mp4`
-- `project-food101.mp4`
-- `project-eeg.mp4`
-- `project-rfm.mp4`
 
 ## 📝 Customization
 
@@ -84,7 +68,6 @@ All content is centralized in `lib/data.ts`:
 Place these in `/public/`:
 - `resume.pdf` — Your resume PDF (from Overleaf)
 - `intersystems-badge.png` — Already added
-- `avatar.jpg` — Your photo (optional, for future use)
 
 ## 🚀 Getting Started
 
