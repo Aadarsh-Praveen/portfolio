@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base: #F8F7F4;
+  --bg-card: #FFFFFF;
+  --bg-elevated: #F0EEE9;
+  --accent-cyan: #00B89A;
+  --accent-blue: #2563EB;
+  --text-primary: #0F0F0F;
+  --text-muted: #6B6B80;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F8F7F4;
+  color: #0F0F0F;
+  font-family: var(--font-outfit), sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(0, 184, 154, 0.2);
+  color: #0F0F0F;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F0EEE9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 184, 154, 0.4);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 184, 154, 0.6);
+}
+
+@layer utilities {
+  .glass-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+  }
+
+  .glow-border-cyan {
+    border: 1px solid rgba(0, 184, 154, 0.25);
+    box-shadow: 0 2px 12px rgba(0, 184, 154, 0.08);
+  }
+
+  .glow-border-blue {
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    box-shadow: 0 2px 12px rgba(37, 99, 235, 0.08);
+  }
+
+  .text-gradient-cyan {
+    background: linear-gradient(135deg, #00B89A, #2563EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  @media (max-width: 768px) {
+    .section-padding {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  .project-card-inner {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .project-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .project-card-desc {
+    flex-shrink: 0;
+    margin-bottom: 0;
+    font-size: 13.5px;
+    line-height: 1.7;
+  }
+
+  .project-card-spacer {
+    display: none;
+  }
+
+  .project-card-tags {
+    flex-shrink: 0;
+    margin-top: 16px;
+  }
+
+  .project-card-links {
+    flex-shrink: 0;
+    margin-top: 12px;
+  }
+}
